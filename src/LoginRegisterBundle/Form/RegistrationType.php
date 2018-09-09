@@ -17,7 +17,7 @@ class RegistrationType extends AbstractType
         $builder->add('siteRules', CheckboxType::class, array(
             'label'    => 'С правилами сайта согласен',
             'required' =>true,
-            //'constraints' => new NotBlank(),
+            'constraints' => new NotBlank(),
 
         ));
     }
